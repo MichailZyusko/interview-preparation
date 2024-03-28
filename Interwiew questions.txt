@@ -1,0 +1,248 @@
+- Common questions ☑️
+    1. Tell me about yourself, about your experience?
+    2. What did you study at university?
+    3. Tell me about you the most challenging situation for you in your work experience?
+    4. How do you do code reviews on your projects?
+    5. Did you use static analyzing and dynamic analysis tools?
+    6. How you stay up to date with new technologies?
+    7. How you improve your knowledge?
+
+---
+
+- Refactoring
+    - flip if
+    - replace a lot of condition w/ array includes
+    - replace switch case/a lot of if’s with object
+    - What is a Short circuit condition
+        
+        ```jsx
+        if (authenticate) {
+          loginToPorta();
+        }
+        
+        VS
+        
+        authenticate && loginToPorta();
+        ```
+        
+    - 
+
+---
+
+- Coding questions
+    - Sum of a number series in a range
+        
+        <aside>
+        💡 1. Using for loop
+        2. Using recursion
+        3. Using [formula](https://obzorposudy.ru/polezno/cto-oznacaet-naxozdenie-summy-ryada#:~:text=%D0%B2%20%D0%B2%D0%B8%D0%B4%D0%B5%20%D1%80%D1%8F%D0%B4%D0%B0.-,%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D1%81%D1%83%D0%BC%D0%BC%D1%8B%20%D1%80%D1%8F%D0%B4%D0%B0%3A,-%D0%A0%D0%B0%D1%81%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D0%BC%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D1%81%D1%83%D0%BC%D0%BC%D1%8B)
+        
+        </aside>
+        
+
+---
+
+- Logical task
+    - Find the relationship between the light bulb and the switch
+        
+        Q: We have two rooms that are separated by an non-transparent wall. There are 3 light bulbs in one room and 3 switches in the other. They are connected by wires, but we don't know which bulb is connected to which switch. It means that 1st bulb can be connected to 1st, 2nd or 3d switches respectively. Our task is to find the relationship between the bulb and the switch. Constraints: we are in a room with switches, we have to do some manipulations with switches and then move to another room and tell which light bulb is connected to which switch. 
+        
+        <aside>
+        💡
+        
+        </aside>
+        
+    - Bad pills & good pills
+        
+        Q: We have 5 containers with the same amount of pills and an electronic scale. There are 10 pills in each container. There are 2 types of pills: poisoned and normal. They look identical, the only difference is the weight: the poisoned one weighs 9 grams and the normal one 10 grams. Your task is to determine which container contains only the good pills? Constraints: you can only use the scales once.
+        
+        <aside>
+        💡
+        
+        </aside>
+        
+    - 
+
+---
+
+- JS
+    - What is EventLoop? How it works? What is diff between FE & BE?
+    - What is 'this' ?
+    - What is closure?
+    - What is the difference between == and === operators
+    - What is a higher order function
+    - What is the currying function
+    - What is a pure function
+    - What is the difference between let and var
+    - What is Promise? Tell me more about static methods of Promise
+    - What is IIFE(Immediately Invoked Function Expression)
+    - How do you decode or encode a URL in JavaScript?
+    - What is a service worker
+    - What are the differences between cookie, local storage and session storage
+    - What is a callback function? What is a callback hell?
+    - What is the difference between null and undefined
+    - What is isNaN
+    - What is Proxy & Reflect? What is diff?
+    - What is the difference between Call, Apply and Bind
+    - Props & cons of JS
+    - Is JavaScript a compiled or interpreted language
+    - What is setTimeout, setInterval, setImmideate
+    - How do you check if a key exists in an object
+    - How to made object readonly
+    - What is flags in object (Readeblem enumerateble and so on)
+    - What is a polyfill
+    - What is tree shaking
+    - What would be the result of 1+2+'3’
+    - What is the difference between proto and prototype
+    - What are the bitwise operators available in javascript
+    - What are WeakMap and WeakSet in JS? What is diff between Map & Set
+    - How perform deepCopy object?
+    - What Is Obfuscation in javascript
+    - What is V8 JavaScript engine
+    - How to swap to variables in one line?
+    - What is the purpose of double tilde operator
+    - What is Mixin in JS?
+    - **What are wrapper objects**
+    - **How to cancel a fetch request**
+    - What is minimum timeout throttling
+    - What is the purpose of queueMicrotask
+    - Is Node.js completely single threaded
+    - What is JS generators?
+    - What is symbols in JS?
+    - **What is the difference between isNaN and Number.isNaN?**
+    - 
+
+---
+
+- TS ☑️
+    - JS vs TS. Where and why will use in next project?
+    - Props & cons of TS
+    - What is ts.config?
+    - What is declare keyword?
+    - Build in types in typescript?
+    - Do you know any utility types (`Pick` & `Omit`)?
+    - Diff between `any` VS `unknown` VS `never` VS `void`? Gimme example of use case when you are using each of type.
+    - What is type guards in TS?
+    - Diff `const enum` VS `enum`
+    - What is conditional type?
+    - What is `infer` keyword?
+    - What is type casting? What is diff between type declaration and type casting?
+    - What means satisfied keyword?
+    - If you are wanna create an object. Which type you will use?
+    - TS are compilable or interpreted language?
+    - What is generic types? Why it’s useful?
+    - **Explain Tuples in Typescript With Example?**
+    - What is decorators?
+    - What is function owerloading? Does it supported in TS?
+    - How do the extensions .ts and .tsx differ in TypeScript?
+    - Explain main OOP principle on TS. Which one is most non-important & important (just POV)?
+    - How can you make read-only Arrays in TypeScript?
+    - Explain assertion functions?
+    - Differentiate between extends and implements in TypeScript?
+    - Difference between interface VS types vs Class vs abstract class?
+
+---
+
+- Databases ☑️
+    - Tell me about DB? What pradigms do you know?
+    - What is ORM/ODM? Why it’s important? Did you used in you programmer life?
+    - How to handle fast-growing databases? Do you know what is scaling/sharding?
+    - How to speed up your query?
+        - Using SSD instead of HDD
+        - Using indexing
+        - Write more efficient queries
+        - Using denormalizations
+    - How to replicate your DB?
+    - What is migration? Why we are need this?
+    - How to design databases? Try to design `chat` app
+    - What is diff between SQL & NoSQL?
+    - How to make sure that we don’t loose our date accidently?
+    - SQL
+        - What is SQL? What parts does it consist of?
+        - What is ACID?
+            - A -
+            - C -
+            - I -
+            - D -
+        - What is transactions? How it works?
+        - What is CQRS?
+        - What is SQL-injection? How to avoid it? What you can tell about normalization & denormalization?
+        - What diff between left, right, inner, cross(full) join?
+        - What is VIEW in PostgresSQL? Why we are using it?
+        - Diff between DELETE vs TRUNCATE
+        - Diff between WHERE vs HAVING
+        - What is primary key & foreign key? What is diff and why we are using it?
+        - What is index? Why we are using it?
+    - NoSQL
+        - **What do you understand by NoSQL?**
+            
+            <aside>
+            💡 NoSQL = Not Only SQL
+            
+            </aside>
+            
+        - What you know about BASE?
+        - **What do u know about database sharding in the NoSQL database?**
+        - Why Redis is so fast? Where it stores data?
+
+---
+
+- Design patterns
+    - Do you know what means SOLID abbr?
+    - Do you know what means DRY abbr?
+    - 
+
+---
+
+- System architect
+
+---
+
+- DevOps
+    - What is DevOps?
+    - 
+
+---
+
+- Cybersecurity
+
+---
+
+- Node JS
+    - How accurate Node JS, in terms of time. (ms, µs, ns)
+    - What is NodeJS streams. Where and why it's used?
+    - How to measure performance of you app?
+
+---
+
+- Testing
+    - What is testing. Why it's necessary?
+    - Can you tell me about pyramid of testing?
+    - What is unit tests. Where and why it's used?
+    - What is integration tests. Where and why it's used?
+    - What is e2e tests. Where and why it's used?
+    - What is mock, spy, stub? Where and why it's used?
+    - How do you testing FE? What is screenshot testing and where & why it’s used?
+
+---
+
+- Cloud technologies
+
+---
+
+- Algorithms
+
+---
+
+- Network
+    - What is CORS?
+    - What is HTTP?
+    - What is WebSocket?
+    - What is gRCP?
+    - Whit is GraphQL?
+
+---
+
+- Web
+
+---
