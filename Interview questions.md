@@ -14,6 +14,11 @@
         12. How do you handle blocking I/O operations in Node.js?
         13. How can you optimize the performance of a Node.js app?
         14. How do you track the performance of a Node.js application?
+        15. Tell us about Node.js, how it works, and why it does not block calls when we work with it?
+        16. What is the purpose of V8 and Libuv?
+        17. Explain how the event loop works in Node.js and how it differs from the concurrency models in other backend languages you've worked with.
+            1. Follow-up 1: How would you handle blocking I/O operations in a Node.js application?
+            2. Follow-up 2: Describe a scenario where you had to optimize a Node.js application for performance. What profiling tools did you use, and what optimizations did you implement?
     - Express.js
         1. Express vs nest.js
         2. What is middleware in express
@@ -28,9 +33,36 @@
         8. What did you use for handling events in Nest.js?
         9. How convenient was it to work with Nest.js?
         10. NestJS request lifecycle.
+        11. Where can we use the "Factory" pattern in the context of NestJS?
+        12. Was there any benefit in development or application architecture when migrating from Express to NestJS? What new features and design patterns does NestJS introduce?
+        13. What are dynamic modules?
+        14. What is clean architecture? What challenges did you face when implementing clean architecture in NestJS development?
+        15. Have you had to write custom DI tokens in NestJS? Did you do this using abstract classes, interfaces, or string tokens?
+        16. How can you solve the problem of circular dependencies in NestJS? What is the architectural solution to this problem?
+        17. What is the main responsibility of a Pipe in NestJS?
+        18. Can you explain how you would implement exception filters in a NestJS app and provide an example when they would be useful?
+        19. Can you explain the concept of decorators in TypeScript and provide an example of how you use them in a NestJS application?
+        20. Have you created your own architectural conventions in NestJS? Your own folder names?
     - General
         1. How do you handle special characters in user input on the backend?
         2. How can backend tasks, like analytics, be automated to run without requiring a request?
+        3. What is Middleware?
+        4. There is an endpoint in our API that is running slowly, how would you address this issue, where would you look, and what would you do to find the problem?
+        5. How do you manage environments for different stages (dev, prod, preprod)?
+        6. Can you discuss a particular challenge you faced with regards to ensuring transactional integrity and how you addressed it?
+        7. Describe your approach to designing a scalable and maintainable backend architecture for a high-transaction financial application.
+            1. What considerations did you prioritize?
+                1. Follow-up 1: How did you ensure the system could handle peak load times efficiently?
+                2. Follow-up 2: Discuss how you managed state, session, and caching mechanisms to optimize performance.
+                3. Follow-up 3: Can you share any experiences with implementing or migrating to a microservices architecture, and the challenges faced?
+        8. Discuss your methodology for designing a modular and maintainable backend architecture.
+            1. What design patterns have you found to be particularly effective within the financial sector?
+            - Follow-up 1: How do you ensure that the chosen architectural design adheres to the principles of high cohesion and low coupling?
+            - Follow-up 2: Explain how you would facilitate communication between different modules or services while maintaining a clean separation of concerns.
+        9. Describe an instance where you had to incorporate real-time data processing within a web application architecture in a financial context.
+            1. What technologies and strategies did you employ to meet the real-time requirements?
+            - Follow-up 1: How did you manage the potential trade-off between consistency and availability, especially in a real-time processing scenario?
+            - Follow-up 2: Discuss any considerations or strategies you employed to ensure the security and integrity of real-time data processing.
     - NPM
         1. Are you familiar with private libraries in npm?
         2. How do you work with npm libraries locally?
@@ -84,6 +116,16 @@
             41. You have useEffect which contains setInterval that renders something. What do you need to consider when implementing it?
             42. React Fragment, Portal, HOC.
             43. How do you handle error handling in a React application?
+            44. State of parent was changed, does child render?
+            45. Use cases for custom hook;
+            46. Use case of Styled components;
+            47. Task in a React application (created with create-react-app) to write your own implementation of tabs styled like in Google Chrome or Yandex tabs. Then questions were asked about how to optimize it, and they also asked about what to do if we have many tabs (100) and when the user clicks on only one, essentially only two tabs change. How to optimize the rendering process and is it necessary to do it at all.
+            48. What optimization methods for React applications do you know?
+            49. How to optimize heavy calculations in React that occur on every render?
+            50. Suppose there are 3 actions, each making a server request. How to execute these 3 actions sequentially using Redux-thunk?
+            51. What is the unwrap method in Redux RTK?
+            52. What are interceptors on the frontend?
+            53. How did you organize protected routing in your project?
         - Vue.js
             1. What do u think about Vue and version of Vue u have managed to work with
             2. v-model in Vue
@@ -95,6 +137,7 @@
             8. What’s the difference between these two components? One is used with v-model and the other one with :list.
             9. When should we use v-model and when should we use :list?
             10. What is the problem when I pass a list with v-model? (Answer: v-model ignores the initial value)
+            11. Basic understanding of Vue.js, its lifecycle, and state management.
         - Next.js
             1. What can you tell me about Next.js apart from SSR & SEO?
             2. What happens when we use getServerSideProps in comparison to SSG?
@@ -107,6 +150,8 @@
             9. What is dynamic routing and how is it implemented in Next.js?
             10. What is the purpose of getInitialProps in Next.js?
             11. Types of rendering in Next.js.
+            12. What is dynamic routing and how is it implemented in Next.js?
+            13. Can you tell me what recommendations exist for optimizing the performance of a Next.js application?
         - Angular
             1. What are observables in Angular and how do they differ from promises?
             2. Does Angular handle cross-site scripting or cross-site request forgery?
@@ -137,6 +182,17 @@
             27. What are dynamic components in Angular? What for and how do you use them?
             28. Name the RxJs operators you have worked with most often.
             29. What is a directive in Angular?
+            30. Prime ng components
+            31. Angular life cycle hooks
+            32. RxJS operators
+            33. Subjects and behaviour subjects
+            34. http interceptors
+            35. authorization (token how to pass it)
+            36. Are you aware of Prime NG?
+            37. So suppose you wanted to communicate between two components. The user has opened two components on the left side  and there is something on the right side. There's something and you do some changes on the left side component. It has to be communicated to the right side component. How do you do that in Angular? What are the ways? in which you can communicate
+            38. Can we use rxjs to communicate between the components?
+            39.  And how do you handle any authorization of on the frontend parts.
+            40.  How do you determine if a user can access a particular page or not? How do you determine that based on the token?
         - React Native
             1. Have you worked with mobile development and React Native in particular?
     - SEO
@@ -147,6 +203,8 @@
         2. Can u list values of position property in CSS
         3. Explain CSS specificity.
         4. What’s the difference between “fixed” and “sticky”?
+        5. Have you skill with designing emails implementing HTML,CSS?
+        6. Have you struggled with email, gmail and etc inform with html css?
     - GSM (Global State Managers)
         1. Suppose you have 3 actions that involve server requests, and you need to execute them sequentially. How would you implement this in Redux?
         2. How do you manage state in React?
@@ -174,6 +232,7 @@
         19. Do you know something about design systems, for example, when you have to support themes in an app?
         20. How do you handle accessibility features using JavaScript, so people could use the website only with a keyboard?
         21. Let’s say I have an input and a search button. I’m typing some text, every time I change the input I want my previous request to be canceled. What is the best operator you can apply in this scenario?
+        22.  Have you built any custom UI library for your project?
 - PROGRAMMING LANGUAGES ☑️
     - TypeScript (TS)
         1. Can you describe a scenario where you’d use interfaces over classes? And how does this choice impact the design of the system?
@@ -204,32 +263,48 @@
         26. What is `infer` means in TS?
         27. Let’s say I have an interface, and I want to extract from that interface a type with all properties optional. How would you do that?
         28. What are the most useful features of TypeScript?
+        29. JS vs TS (what and when would you use)?
+        30. Built-in types in TypeScript?
+        31. Speaking of typing, there are some undesirable types like any, but now we have unknown and never. What are the differences?
+        32. In what cases is unknown used?
+        33. What is intersection in TS?
+        34. If you write string & number, what type will it result in? (The type will be never)
+        35. If you write {a: boolean} & {b: number}, what type will it result in?
+        36. What are Type Guards in TypeScript?
+        37. Can you write a conditional type that checks if a type is a string and returns a boolean value (Answer: type isString<T> = T extends string ? true : false)?
+        38. When working with TypeScript, did you use any libraries that extended the basic set of types?
+        39. Have you encountered the new satisfies keyword in TS?
+        40. Do you know anything about type casting (using the keyword as)?
     - JavaScript (JS)
         1. What are the different data types in JavaScript?
         2. What’s the difference between mutable and immutable objects in JavaScript?
         3. Explain “var b = […a];”
-        4. Does JS mutithreaded or singlethreaded?
-        5. How do we handle a non-blocking operations?
-        6. What can you tell me about promises?
-        7. What kind of troubles can promises give us?
-        8. About promise chaining
-        9. What is variable hoisting?
-        10. What’s the behavior of let and const?
-        11. Array methods: map and filter. Will a new array be created as a result of executing these methods?
-        12. What can you say about Node.js and what’s the difference between it and browser environments?
-        13. What is the Event Loop in the most basic words?
-        14. What are closures in JavaScript and what problems do they solve?
-        15. Difference between arrow function and regular functions in JS?
-        16. What is Hoisting in JS?
-        17. What’s the best: async/await, callback, or promise?
-        18. In terms of error handling, which is the best: async/await or promise?
-        19. What are the states of a promise?
-        20. Why are callbacks not used so widely anymore?
-        21. If I use async-await, how do I make 2 promises at the same time?
-        22. I have a pure function and add some asynchronous operation. Does it make the function impure? What if I’m accessing the Window object?
-        23. Tell us about memory leaks.
-        24. Disadvantages of garbage collector?
-        25. Tell us about callback hell.
+        4. How is an object implemented in JavaScript (e.g., object structure, reference type, etc.)?
+        5. Does JS mutithreaded or singlethreaded?
+        6. How do we handle a non-blocking operations?
+        7. What can you tell me about promises?
+        8. What kind of troubles can promises give us?
+        9. About promise chaining
+        10. What should return async function?
+        11. What is variable hoisting?
+        12. What is 'this' ?
+        13. What’s the behavior of let and const?
+        14. Array methods: map and filter. Will a new array be created as a result of executing these methods?
+        15. What can you say about Node.js and what’s the difference between it and browser environments?
+        16. What is the Event Loop in the most basic words?
+        17. What are closures in JavaScript and what problems do they solve?
+        18. Difference between arrow function and regular functions in JS?
+        19. What is Hoisting in JS?
+        20. What’s the best: async/await, callback, or promise?
+        21. In terms of error handling, which is the best: async/await or promise?
+        22. What are the states of a promise?
+        23. Why are callbacks not used so widely anymore?
+        24. If I use async-await, how do I make 2 promises at the same time?
+        25. I have a pure function and add some asynchronous operation. Does it make the function impure? What if I’m accessing the Window object?
+        26. Tell us about memory leaks.
+        27. Disadvantages of garbage collector?
+        28. Tell us about callback hell.
+        29. When it comes to asynchronous operations, which mechanisms do you use most often (callbacks, async/await, promises)?
     - Python
         1. Describe your experience with Python and NumPy.
         2. How do you handle data consistency problems when working with Pandas?
@@ -238,6 +313,31 @@
         5. How do you deal with asynchronous operations in Python?
         6. Do you know NumPy capabilities in vectorization?
         7. Have you had any challenges working with multidimensional arrays?
+        8. *Question*:
+        
+        Explain a scenario where you leveraged Python, along with Pandas and/or NumPy, to solve a complex data analysis problem within the banking/finance domain.
+        
+        1. Follow-up 1: How did you ensure the accuracy and integrity of the data being analyzed?
+        2. Follow-up 2: Discuss any optimizations you made to improve the performance of your data processing tasks.
+        3. Follow-up 3: Were there any data security and privacy concerns you had to address? How did you mitigate these concerns?
+        4. *Question*:
+        
+        Describe a situation where you utilized Python's advanced features such as decorators, context managers, or metaclasses. What was the problem, and how did these features provide a solution?
+        
+        1. Follow-up 1: Explain how you've managed dependencies and environment isolation in your Python projects.
+        2. Follow-up 2: Discuss your experience with Python's asynchronous programming features. How have you used asyncio or other concurrency libraries in a project?
+        3. *Question*:
+        
+        Describe a complex data transformation or analysis task you've completed using Pandas. How did you ensure the efficiency of your code, especially when working with large datasets?
+        
+        1. Follow-up 1: Explain your strategy for handling missing or inconsistent data in a Pandas DataFrame.
+        2. Follow-up 2: Discuss a situation where you had to optimize the performance of a Pandas-centric data processing task. What techniques did you employ?
+        3. *Question*:
+        
+        Explain a scenario where you leveraged NumPy's capabilities to solve a numerical or computational problem. How did NumPy's features contribute to the solution?
+        
+        1. Follow-up 1: Discuss your experience with vectorization in NumPy, and how it aided in improving the performance of your computations.
+        2. Follow-up 2: Describe any challenges you faced when working with multi-dimensional arrays in NumPy and how you overcame them.
 - DATABASE  ☑️
     - SQL
         1. How would you optimize a SQL query with many joins?
@@ -253,6 +353,7 @@
         11. How to improve the performance of SQL queries.
         12. CAP theorem.
         13. Types of joins in SQL.
+        14. How can you optimize a slow SQL query (as far as I remember, in PostgreSQL there is a special command to analyze the query)?
     - NoSQL
         1. How did you use MongoDB on your last project? Did you write complex queries?
         2. Did you keep the relations in the schema or embed documents in MongoDB?
@@ -261,6 +362,13 @@
         5. Base NoSQL.
         6. When not to use indexes in NoSQL.
         7. What is your experience with transactions in MongoDB?
+        8. What did you use Redis?
+        9. *Question*:
+            - In a recent project, how have you optimized a MongoDB schema for a high-transaction environment like banking or finance?
+            - What indexing strategies did you employ to enhance performance?
+                - Follow-up 1: Describe your experience with MongoDB transactions. How did you handle rollback in case of failures?
+                - Follow-up 2: How did you ensure the atomicity and isolation of transactions, particularly in a distributed database environment?
+                - Follow-up 3: Can you discuss any sharding strategies you've implemented to manage large datasets and ensure database performance?
     - General
         1. When to use SQL and when NoSQL?
         2. How to keep personal info secure in DB?
@@ -291,25 +399,51 @@
         27. Explain transaction isolation levels.
         28. Replication types (database).
         29. How do you handle transaction rollbacks?
+        30. What databases have you used?
+        31. Have you scaled databases or sharded them?
+        32. Describe your experience with ORMs, compare them, and explain which one you prefer and why?
+        33. How do replication and sharding work?
+        34. Explain what the N+1 problem is and how to handle it in TypeORM?
+        35. How can migrations be organized in TypeORM, and what tools do we have for this?
+        36. Imagine we have a migration that failed, we want to restart it, but at the beginning of the migration some columns were deleted, we restarted it but the columns are already deleted, how to fix this situation (Note: you need to foresee this in the down method)?
+        37. Experience with transaction management in a financial domain context.
+        38. Knowledge in schema design, indexing, and performance optimization.
+        39. How can multitenancy be implemented? How can this be done on the database side without creating a database for each tenant?
+        40. How can you optimize a large number of joins in a query?
+        41. How would you implement transferring funds between two accounts of one user?
+        42. What are transactions? How do they work? What is data consistency?
+        43. What criteria should be used to choose between relational and non-relational databases?
+        44. In what cases can JSON be stored in an SQL database, and when is it better to use regular tables with relationships?
+        45. Have you ever designed a database, and what do you pay attention to when designing a database?
 - DevSecOps  ☑️
     - DevOps and Deployment
         1. What are multi-stage builds in Docker and when should you use them? Why are they efficient?
         2. What were your DevOps responsibilities?
-        3. What were you using for CI/CD pipelines?
-        4. What is Kubernetes? What is autoscaling? On what basis do you scale it? On which criteria would you go for scaling?
-        5. What's the difference between a Docker Image and a Container?
-        6. You have an API written using Node.js, what should your Dockerfile contain to run it?
-        7. If you're deploying your API to production, do you think you need package.json included in the production build? It's not good to give end-users this file, how do you prevent it? Should only the production build be exposed?
-        8. Have u worked with bash and linux commands
-        9. Have u used some kind of proxies
-        10. We have FE app and we wanna dockerize it, app makes multiple requests to backend and base URL is changing from environment to environment, we store this base URL in env var and we wanna change it’s value dynamically after image has been built. How can we achieve it
-        11. Describe your experience with Docker.
-        12. What network drivers does Docker have?
-        13. Write a Dockerfile for a Node.js application. Explain what it consists of.
-        14. What is Nginx, how do we use it?
-        15. What is a reverse proxy?
-        16. Do you have experience using Traefik/Nginx as a reverse proxy?
-        17. CDN, reverse proxy, load balancing.
+        3. What CI/CD pipelines have you set up? Describe how you deployed projects from the coding process to delivery (what tools you used for this, how PRs were opened/closed, how tests were run).
+        4. What were you using for CI/CD pipelines?
+        5. What is Kubernetes? What is autoscaling? On what basis do you scale it? On which criteria would you go for scaling?
+        6. What's the difference between a Docker Image and a Container?
+        7. You have an API written using Node.js, what should your Dockerfile contain to run it?
+        8. If you're deploying your API to production, do you think you need package.json included in the production build? It's not good to give end-users this file, how do you prevent it? Should only the production build be exposed?
+        9. Have u worked with bash and linux commands
+        10. Have u used some kind of proxies
+        11. Describe how you handled deployment (CI/CD, GitHub Actions, AWS), and specify details about Docker (ECS service in AWS)?
+        12. We have FE app and we wanna dockerize it, app makes multiple requests to backend and base URL is changing from environment to environment, we store this base URL in env var and we wanna change it’s value dynamically after image has been built. How can we achieve it
+        13. Describe your experience with Docker.
+        14. What network drivers does Docker have?
+        15. Write a Dockerfile for a Node.js application. Explain what it consists of.
+        16. What is Nginx, how do we use it?
+        17. What is a reverse proxy?
+        18. Do you have experience using Traefik/Nginx as a reverse proxy?
+        19. CDN, reverse proxy, load balancing.
+        20. Syntax of a YAML file for Docker.
+        21. If the API and URL in the application are not the same, how do you handle it?
+        22. Question:
+            1. Describe a scenario where you had to containerize a NodeJS and MongoDB application using Docker for a banking/finance project.
+            2. How did you ensure the security and scalability of the deployed application?
+            - Follow-up 1: What were your considerations for orchestrating these containers, especially in a microservices architecture? Did you use any orchestration tools like Kubernetes?
+            - Follow-up 2: Can you discuss any continuous integration/continuous deployment (CI/CD) pipelines you set up for this project? How did you manage configuration across different environments?
+            - Follow-up 3: How did you monitor the health and performance of the containerized application post-deployment, and what strategies did you employ for logging and troubleshooting?
     - Security
         1. What is a web app firewall?
         2. What is CORS and how does it work under the hood?  And why do we have it? And who will block a cross-origin request?
@@ -327,6 +461,15 @@
         14. Tell about your experience of working with security and vulnerabilities, and how you solved any problems with that.
         15. What do you know about security in the web world? Maybe about some vulnerabilities and other stuff.
         16. Frontend communicates with a third party by some secret key. The key has been stolen and your backend regenerates this secret key, but the frontend still uses the old key (with which the frontend app was deployed). How does the frontend app know that the secret key has been regenerated? How to notify the frontend and make it use the new key?
+        17. WAF (Web Application Firewall)
+        18. How do you handle any sensitive information when designing an API? What are the best practices for that?
+        19. How did you ensure the security of sensitive financial data while processing transactions through the API?
+        20. Do you know what GDPR is?
+        21. Describe a situation where you had to address a significant security vulnerability in a financial application you were working on.
+        22. What steps did you take to mitigate the issue and ensure compliance with regulatory standards?
+            - Follow-up 1: How did you manage the disclosure and remediation process?
+            - Follow-up 2: Discuss your approach to maintaining a secure development lifecycle in a fast-paced agile environment.
+            - Follow-up 3: How do you stay updated with the latest security threats and compliance requirements, and ensure your team is educated as well?
     - Cloud
         1. What is a layer, versioning of a layer, and how do you manage dependencies in Lambda?
         2. What is hot state in Lambda?
@@ -348,6 +491,19 @@
         18. How do you know when you need to scale AWS service? What metrics would you use? (load of CPU, RAM)
         19. Describe the architecture of the AWS environment on your projects.
         20. What is Lambda layer?
+        21. How does the setup of API Gateway work?
+        22. Explain how a Lambda function works (how the code is written, how to handle dependencies in Lambda).
+        23. There is an unpleasant limitation of 250 MB for layers, how can it be bypassed?
+        24. Do you have experience with Terraform/CloudFormation?
+        25. Imagine a situation: we have a project with dev dependencies and regular dependencies, how would you solve the problem of wanting to upload only dependencies without dev dependencies, or both (Answer: they decided to create two package.json files and put the dependencies in them)?
+        26. Imagine you need to deploy an RDS instance, and you have an API Gateway, Lambda, and S3, describe the types of resources you would create to make this setup work (Note: you need to mention VPC to isolate the RDS instance from internet access).
+        27. Have you worked with CodeBuild, CodePipeline?
+        28. How to separate dev and prod dependencies when creating a Lambda function?
+        29. What problems do you see with using Lambda?
+        30. What is a cold start?
+        31. What use cases do you see for Lambda? Is it possible to write controllers on Lambda, and what pros and cons do you see in this approach?
+        32. Serverless implementation (what do you think about them, have you encountered any problems)?
+        33. Have you deployed on bare metal?
     - General
         1. Can you tell me about your experience as a DevOps?
 - TECHNIQUES  ☑️
@@ -360,25 +516,50 @@
         6. How do you handle authentication in apps? Do you handle any authorization based on JWT token on the frontend part?
         7. What is OAuth and how does it work?
         8. Tell us about JWT.
+        9. What kind of authorization have you implemented (JWT, OAuth, AWS Cognito)?
+        10. Did you implement anything for roles (admin/user), how did you store roles?
+        11. What was the authorization and authentication flow in your project? Where do you store accessToken and refreshToken on the client side? Is the refreshToken one-time use?
+        12. Do you think modern projects should use JWT tokens by default instead of sessions?
+        13. How do you solve the problem of JWT token invalidation if data changes on the server side?
+        14. Which library can be used on the server side for authentication?
+        15. Authorization, authentication, JWT. Describe the implementation details, where did you store the refresh token?
+        16. How can you implement a role system on the server side?
     - Validation
         1. How do you validate payload or request data?
         2. You have an input that’s used to paste a number bigger than bigint can store. How would you validate it? Let’s say you’re using React.
         3. Share your screen and write validation to check if the input is an email.
+        4. How to validate special characters?
+        5. What request validation tools have you used on the server side?
     - Caching
         1. Tell us about Redis. What is the complexity of using Redis for caching?
         2. For example, you have a user stored in the cache. They updated their passport data, you need to change it both in the cache and in the main database. How would you do it?
-    - Logging
+    - Logging & Error handling
         1. How would you implement exceptions logging in microservices? Where do you store logs?
+        2. Can you share your approach towards logging and monitoring to ensure system reliability and to diagnose issues in a timely manner?
+        3. How did you manage error handling and ensure data consistency across distributed systems, especially in scenarios with network failures?
+    - Documentation
+        1. Have you worked with Swagger manually through YAML or with decorators?
     - Application monitoring
         1. Was it a production environment? If yes, did you need to monitor it? What exactly did you monitor, and how did you understand that everything was working? What kind of alerts did you use in the system?
         2. How do you monitor the performance of a containerized application?
-- Kafka ☑️
+    - Performance Optimisation & Scalability
+        1. Discuss a specific instance where you were tasked with optimizing the performance of a slow, high-traffic financial application.
+            1. What steps did you follow, and what were the outcomes?
+            - Follow-up 1: How did you identify the performance bottlenecks, and what tools or methodologies did you use?
+            - Follow-up 2: Describe any code optimizations, caching strategies, or database indexing you implemented to improve performance.
+            - Follow-up 3: Post-optimization, how did you ensure the system remained scalable and maintainable?
+- Message brokers ☑️
     1. How did you configure Kafka using JS?
     2. Are you comfortable working with Kafka?
     3. Can you please explain about the architecture of Kafka?
     4. Do you familiar to Kafka
     5. How do you set up master selection in Kafka when you configure it?
     6. What’s your experience working with Prisma ORM? Kafka has its own persistent layer, so how do you compare both of them?
+    7. How did you use RabbitMQ and what was it used for?
+    8. You are using Kafka based on the messages you are subscribing to or publishing. How are you notifying the users on the client side?
+    9. What happens when you have a consumer group and there are other consumer groups as well?
+    10. Where are you consuming and then how are you giving messages if there are multiple parts subscribing to the same messages? How do you ensure correct communication back to the UI without losing messages when multiple parts are running?
+    11. Have you heard of something known as group consumer ID? What is it used for in the consumer group?
 - Web Technologies and Protocols ☑️
     - GraphQL
         1. Did you have GraphQL gateway connected to different microservices or did you have a GraphQL federation?
@@ -397,8 +578,17 @@
         14. How do resolvers work in GraphQL and how are they different from REST API?
         15. What are some security concerns specific to GraphQL and how would you address them?
         16. DataLoader in GraphQL.
+        17. How do you handle optimization issues in GraphQL?
+        18. When might it be preferable to use GraphQL instead of REST API?
     - gRPC
         1. What is the idea behind gRPC?
+    - Websokets
+        1. Did you use WebSockets?
+        2. Websockets (describe how you set them up, what challenges you faced, why you chose to use them). How will interaction work if you have multiple server instances?
+    - REST
+        1. What is the difference between a POST request and a PUT request?
+        2. Are there any standards for unified API creation?
+        3. Describe your experience designing and implementing a RESTful API for a banking or financial application using NodeJS.
     - General
         1. Imagine you open web browser and typing some URL in the input and click to enter. Describe the following process.
         2. List me the transfer protocols that can be used.
@@ -414,6 +604,7 @@
         12. What is the difference between POST and PUT requests?
         13. HTTP request lifecycle.
         14. Data transfer protocols.
+        15. Proficiency in designing, implementing, and maintaining RESTful or GraphQL APIs.
 - Microservices ☑️
     1. Monolithic vs microservices architecture.
     2. When do you need microservices and when not?
@@ -429,6 +620,11 @@
     12. Describe types of communication between microservices.
     13. Distributed transactions.
     14. How do you approach the challenge of data management in microservices?
+    15. Are you doing any scaling of your microservices, auto-scaling?
+    16. Suppose a user sends a request from the UI and you're using Kafka messages to carry out some back-end operations. The user doesn't know, it's not like an HTTP call. How are you notifying the user on your Angular side? Did you use WebSockets for it?
+    17. In a microservices architecture, how have you approached the challenge of data management, especially considering the transactional nature of financial operations?
+        - Follow-up 1: Discuss your strategy for ensuring data consistency across microservices.
+        - Follow-up 2: Describe any experience you have with Event Sourcing and CQRS, and how these patterns might be applied in a financial application.
 - Testing ☑️
     1. What tests do you know? Which ones do you write?
     2. What was the testing culture within your projects? Did you work with tests?
@@ -439,6 +635,7 @@
     7. What about performance testing, have you used performance testing tools? High load testing?
     8. What are the pros and cons of using Puppeteer and Jest for testing? What’s the difference between mocks and stubs?
     9. What’s the difference between unit and integration tests?
+    10. Did you use any tools for finding problems?
 - Web scrapping ☑️
     1. What about ur experience with Puppeteer
     2. What’s about scrolling in puppeteer
@@ -454,6 +651,8 @@
     5. What are side effects in functional programming?
     6. Encoding vs. encryption vs. hashing.
     7. What is idempotence?
+    8. Do you prefer a declarative or imperative approach?
+    9. What are hash functions? Can you provide examples?
 - Architecture & System design ☑️
     1. Explain SOLID principles.
     2. If you are creating a system from scratch, tell us what technologies you will use, what database, what programming language, and why?
@@ -483,6 +682,7 @@
     26. Serverless vs. event-driven.
     27. Architectural patterns.
     28. What is flux architecture?
+    29. What design patterns do we use in backend application development and why did we choose that particular design pattern?
 - Optimisations  ☑️
     1. Did you have any performance-related problems on the frontend or backend?
 - Coding challenge  ☑️
@@ -491,22 +691,25 @@
     3. TASK: I give you an array of numbers, you need to find Pythagorean triples. Input: [3,1,4,6,5]. Output: 3,4,5 (3^2 + 4^2 = 5^2)
     4. We take an array of digits that represents a whole number. Increment the number represented in the array by one. Write in TypeScript.
     5. Understanding Prefix Trees (Tries). Describe what a Prefix Tree (Trie) is and its efficiency.
+    6. Write an algorithm that finds the length of the longest sequence (segment) of consecutive prime numbers in a given array of numbers, where each subsequent element differs from the previous one by one (the segment should be, for example, 10, 11, 12, 13).
 - Best Practise  ☑️
-    1. How to reduce the costs for MVP?
-    2. What principles and best practices do you use to achieve higher code quality and scaleability?
-    3. Is there anything you want to do in the code in order to improve the performance?
-    4. What about application optimization?
-    5. Did you use some special utility to make sure that everything related to CSS (colors, fonts) is consistent throughout the application? (Means: CSS Variables (Custom Properties); SASS/SCSS; CSS Frameworks; Component Libraries; Style Guide or Pattern Library)
-    6. What’s about Contentful?
-    7. What is the stoplight?
-    8. Can you explain in simple words what is the JSON Schema and what is the OpenAPI?
-    9. Is there any point in adding /api before endpoints, or is it just for understanding?
-    10. Your CV says that you've written clean, efficient, and maintainable code using best practices. What are some of those best practices?
-    11. How do you ensure that an app design is scalable and maintainable?
-    12. Were you using analysis tools for finding vulnerabilities or problems with the code? Were you using any scans?
-    13. Are you aware of static analysis and dynamic analysis tools?
-    14. How do you handle errors in production? What are the best practices to deal with them?
-    15. Tell me more about your approach to ensuring code quality and how you validate what you are doing before it goes to production.
+    1. Did you use any analyzing tools for finding problems?
+    2. How to reduce the costs for MVP?
+    3. What principles and best practices do you use to achieve higher code quality and scaleability?
+    4. Is there anything you want to do in the code in order to improve the performance?
+    5. What about application optimization?
+    6. Did you use some special utility to make sure that everything related to CSS (colors, fonts) is consistent throughout the application? (Means: CSS Variables (Custom Properties); SASS/SCSS; CSS Frameworks; Component Libraries; Style Guide or Pattern Library)
+    7. What’s about Contentful?
+    8. What is the stoplight?
+    9. Can you explain in simple words what is the JSON Schema and what is the OpenAPI?
+    10. Is there any point in adding /api before endpoints, or is it just for understanding?
+    11. Your CV says that you've written clean, efficient, and maintainable code using best practices. What are some of those best practices?
+    12. How do you ensure that an app design is scalable and maintainable?
+    13. Were you using analysis tools for finding vulnerabilities or problems with the code? Were you using any scans?
+    14. Are you aware of static analysis and dynamic analysis tools?
+    15. How do you handle errors in production? What are the best practices to deal with them?
+    16. Tell me more about your approach to ensuring code quality and how you validate what you are doing before it goes to production.
+    17. Do you follow any rules for naming and folder structure?
 - Project Experience ☑️
     1. Could you quickly introduce yourself?
     2. Tell us about your experience and what you recently did.
@@ -609,43 +812,49 @@
     34. Did you work in an office or remotely? What do you prefer, and what’s better?
     35. How do you measure if something is successful or not?
     36. What do you like about the job? What’s your favorite thing to do?
+    37. How long have you been in software development?
+    38. What kind of project do you want to work on in ten years?
 - Miscellaneous ☑️
-    1. What side would u like to work on at your next project?
-    2. Have you had any experience where you were a single developer on a project?
-    3. How long have you been working at Innowise?
-    4. What do you do in your free time?
-    5. Where are you from?
-    6. How long have you lived in Warsaw?
-    7. From where did you move to Warsaw?
-    8. Why did you move?
-    9. What new technologies would you like to learn or work with?
-    10. What are your activities while you are on the bench?
-    11. Do you think there will be difficulties in working because of the time zone difference? (Client from the USA)
-    12. Have you worked with code support? How do you understand the existing code? Have you ever been involved in troubleshooting?
-    13. Do you prefer imperative or declarative code?
-    14. What’s the ideal project for you?
-    15. Do you prefer frontend or backend development?
-    16. Where did you study, at which university/college?
-    17. Do you prefer working from home or office?
-    18. When working remotely, do you work from home or an office?
-    19. When working remotely, what do you think is extra-important? What’s your strategy for integrating yourself into a remote team?
-    20. What about synchronous communication versus asynchronous communication? Calls vs chats?
-    21. Do you have any preferences, like technologies, methodologies, etc.?
-    22. How did you sync up with international remote teams?
-    23. How do you keep yourself updated with the new technologies?
-    24. How would you score your experience to our requirement from 1 to 10?
-    25. What would you do if the documentation is not extensive yet?
-    26. What kind of resources do you use to keep up to date with changes in your specialization?
-    27. How do you manage tight deadlines?
-    28. Is time overlap okay with you? Won’t it be a problem that your day finishes when ours starts?
-    29. Were there any business pressures or missed deadlines on your last project? How did you deal with that?
-    30. Have you worked as a tech lead on some projects?
-    31. Did you choose the stack of technologies or someone else?
-    32. How long have you been working at Innovise?
-    33. Is Innovise your first company?
-    34. Where are you located? Do you work remotely or from an office?
-    35. What technologies do you want to learn or work with?
-    36. What new technologies would you like to learn or work with?
+    1. Which programming languages are you most experienced with?
+    2. What side would u like to work on at your next project?
+    3. Have you had any experience where you were a single developer on a project?
+    4. How long have you been working at Innowise?
+    5. What do you do in your free time?
+    6. Where are you from?
+    7. How long have you lived in Warsaw?
+    8. From where did you move to Warsaw?
+    9. Why did you move?
+    10. What new technologies would you like to learn or work with?
+    11. What are your activities while you are on the bench?
+    12. Do you think there will be difficulties in working because of the time zone difference? (Client from the USA)
+    13. Have you worked with code support? How do you understand the existing code? Have you ever been involved in troubleshooting?
+    14. Do you prefer imperative or declarative code?
+    15. What’s the ideal project for you?
+    16. Do you prefer frontend or backend development?
+    17. Where did you study, at which university/college?
+    18. Do you prefer working from home or office?
+    19. When working remotely, do you work from home or an office?
+    20. When working remotely, what do you think is extra-important? What’s your strategy for integrating yourself into a remote team?
+    21. What about synchronous communication versus asynchronous communication? Calls vs chats?
+    22. Do you have any preferences, like technologies, methodologies, etc.?
+    23. How did you sync up with international remote teams?
+    24. How do you keep yourself updated with the new technologies?
+    25. How would you score your experience to our requirement from 1 to 10?
+    26. What would you do if the documentation is not extensive yet?
+    27. What kind of resources do you use to keep up to date with changes in your specialization?
+    28. How do you manage tight deadlines?
+    29. Is time overlap okay with you? Won’t it be a problem that your day finishes when ours starts?
+    30. Were there any business pressures or missed deadlines on your last project? How did you deal with that?
+    31. Have you worked as a tech lead on some projects?
+    32. Did you choose the stack of technologies or someone else?
+    33. How long have you been working at Innovise?
+    34. Is Innovise your first company?
+    35. Where are you located? Do you work remotely or from an office?
+    36. What technologies do you want to learn or work with?
+    37. What new technologies would you like to learn or work with?
+    38. What major refactoring activities have you undertaken on the backend?
+    39. Do you know the user base of your application? How many users are using your application? And how do you run performance tests?
+    40. What have you been doing for the last 3 years? Is there anything memorable or something you're proud of?
 - Business process & Methodologies  ☑️
     1. Describe your experience of communication with managers, product owners, etc.
     2. Walk me through the lifecycle of a ticket that’s not yet been refined in Scrum. What stages would you expect it to go through?
@@ -681,3 +890,4 @@
     14. Can u tell me in few words what was the integration that u did? (it’s about LM integration)
 - Data structures & Algorithms ☑️
     1. What is a hash table?
+    2. What data structure would you use to handle collisions in a hash table?
